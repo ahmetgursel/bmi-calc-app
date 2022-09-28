@@ -1,8 +1,10 @@
 import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import Logo from '../../assets/bmi-logo-64.png';
 
 function NavbarContainer() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const handleHamburgerBtn = () => {
     setIsOpen(!isOpen);
@@ -39,28 +41,40 @@ function NavbarContainer() {
         <div className={`${isOpen ? 'show' : 'hidden'} w-full md:block md:w-auto items-center`}>
           <ul className='flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white'>
             <li>
-              <a
-                href='/'
-                className='block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700'
+              <Link
+                to='/'
+                className={`block py-2 pr-4 pl-3 rounded  ${
+                  location.pathname === '/'
+                    ? 'bg-gray-200 text-blue-700 md:bg-gray-100'
+                    : 'hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700'
+                }`}
               >
                 BMI Hesaplayıcı
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href='/'
-                className='block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700'
+              <Link
+                to='/about'
+                className={`block py-2 pr-4 pl-3 rounded  ${
+                  location.pathname === '/about'
+                    ? 'bg-gray-200 text-blue-700 md:bg-gray-100'
+                    : 'hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700'
+                }`}
               >
                 BMI Nedir?
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href='/'
-                className='block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700'
+              <Link
+                to='/diet-list'
+                className={`block py-2 pr-4 pl-3 rounded  ${
+                  location.pathname === '/diet-list'
+                    ? 'bg-gray-200 text-blue-700 md:bg-gray-100'
+                    : 'hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700'
+                }`}
               >
                 Diyet Listesi
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
