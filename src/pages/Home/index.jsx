@@ -1,7 +1,9 @@
 import React from 'react';
 
+import Calculator from '../../components/Calculator';
+
 function Home() {
-  return <div>Home</div>;
+  return <Calculator />;
 }
 
 export default Home;
