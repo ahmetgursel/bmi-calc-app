@@ -12,13 +12,13 @@ function NavbarContainer() {
 
   return (
     <nav className='bg-white border-gray-200 px-2 py-2.5 rounded'>
-      <div className='container flex flex-wrap justify-between items-center mx-auto'>
-        <a href='https://www.patika.dev/' className='flex items-center'>
+      <div className='container flex flex-wrap items-center justify-between mx-auto'>
+        <Link to='/' className='flex items-center'>
           <img src={Logo} alt='BMI Logo' className='h-16 mr-3' />
           <span className='self-center text-xl font-semibold text-gray-600 whitespace-nowrap'>
             BMI Hesaplayıcı
           </span>
-        </a>
+        </Link>
         <button
           type='button'
           className='inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200'
@@ -39,7 +39,7 @@ function NavbarContainer() {
           </svg>
         </button>
         <div className={`${isOpen ? 'show' : 'hidden'} w-full md:block md:w-auto items-center`}>
-          <ul className='flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white'>
+          <ul className='flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white'>
             <li>
               <Link
                 to='/'

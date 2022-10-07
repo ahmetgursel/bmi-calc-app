@@ -3,10 +3,34 @@ import { arc } from 'd3-shape';
 import { scaleLinear } from 'd3-scale';
 import { format } from 'd3-format';
 
-function Gauge({ label, value }) {
+// TODO: change style to tailwind className
+
+function Gauge({ value }) {
   const min = 0;
   const max = 50;
-  const units = 'Units Deneme';
+  let label, colorRange, color;
+
+  if (value < 18.5) {
+    color = 'from-blue-300 to-blue-900';
+    colorRange = ['#93c5fd', '#1e3a8a'];
+    label = 'Zayıf';
+  } else if (value < 24.9) {
+    color = 'from-green-300 to-green-900';
+    colorRange = ['#86efac', '#14532d'];
+    label = 'İdeal';
+  } else if (value < 29.9) {
+    color = 'from-orange-400 to-rose-400';
+    colorRange = ['#fdba74', '#fb7185'];
+    label = 'Şişman';
+  } else if (value < 34.9) {
+    color = 'from-rose-300 to-rose-600';
+    colorRange = ['#fda4af', '#e11d48'];
+    label = 'Obez';
+  } else {
+    color = 'from-red-500 to-red-900';
+    colorRange = ['#f87171', '#7f1d1d'];
+    label = 'Aşırı Obez';
+  }
 
   const backgroundArc = arc()
     .innerRadius(0.65)
@@ -33,18 +57,23 @@ function Gauge({ label, value }) {
     Math.sin(angle - Math.PI / 2) * offset,
   ];
 
-  const colorScale = scaleLinear().domain([0, 1]).range(['#dbdbe7', '#4834d4']);
+  const colorScale = scaleLinear().domain([0, 1]).range(colorRange);
   const gradientSteps = colorScale.ticks(10).map((value) => colorScale(value));
   const markerLocation = getCoordsOnArc(angle, 1 - (1 - 0.65) / 2);
 
   return (
-    <div style={{ display: 'flex' }}>
+    <div className='flex'>
       <div
         style={{
           textAlign: 'center',
         }}
       >
-        <svg style={{ overflow: 'visible' }} width='9em' viewBox={[-1, -1, 2, 1].join(' ')}>
+        <svg
+          className='mx-auto'
+          style={{ overflow: 'visible' }}
+          width='9em'
+          viewBox={[-1, -1, 2, 1].join(' ')}
+        >
           <defs>
             <linearGradient
               id='Gauge__gradient'
@@ -90,10 +119,11 @@ function Gauge({ label, value }) {
         >
           {format(',')(value)}
         </div>
+        <div className='text-xl font-black'>kg/m2</div>
         {!!label && (
           <div
+            className={`text-transparent bg-clip-text bg-gradient-to-br ${color}`}
             style={{
-              color: '#8b8ba7',
               marginTop: '0.6em',
               fontSize: '1.3em',
               lineHeight: '1.3em',
@@ -101,17 +131,6 @@ function Gauge({ label, value }) {
             }}
           >
             {label}
-          </div>
-        )}
-        {!!units && (
-          <div
-            style={{
-              color: '#8b8ba7',
-              lineHeight: '1.3em',
-              fontWeight: '300',
-            }}
-          >
-            {units}
           </div>
         )}
       </div>
