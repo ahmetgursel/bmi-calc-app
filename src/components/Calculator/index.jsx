@@ -10,6 +10,7 @@ import BmiModal from '../BmiModal';
 // TODO: change input form with slider
 // TODO: form validation
 // TODO: color schemas
+// TODO: local storage
 
 function Calculator() {
   const navigate = useNavigate();
