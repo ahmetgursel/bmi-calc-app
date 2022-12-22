@@ -9,9 +9,7 @@ function BmiModal({ handleCloseModalBtn, handleDietListBtn, label, value }) {
 					<div className='relative flex flex-col w-full bg-white border-0 rounded-lg shadow-lg outline-none focus:outline-none'>
 						{/*header*/}
 						<div className='p-5 mx-auto border-b border-solid rounded-t border-slate-200'>
-							<h3 className='mx-auto text-3xl font-black'>
-								{label}
-							</h3>
+							<h3 className='mx-auto text-3xl font-black'>{label}</h3>
 						</div>
 						{/*body*/}
 						<div className='p-6 mx-auto'>

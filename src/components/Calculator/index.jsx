@@ -54,9 +54,7 @@ function Calculator() {
 		}
 
 		let calculatedHeight = height / 100;
-		setCalculatedBmi(
-			(weight / (calculatedHeight * calculatedHeight)).toFixed(2)
-		);
+		setCalculatedBmi((weight / (calculatedHeight * calculatedHeight)).toFixed(2));
 
 		addLocalStorage(name, weight, height);
 		setIsModelOpen(true);
@@ -82,16 +80,8 @@ function Calculator() {
 			)}
 			<div className='container mt-10 mx-auto  px-2 py-2.5 space-y-6 md:mt-36'>
 				<div className='flex items-center justify-center'>
-					<label
-						htmlFor='name'
-						className='block mr-3 text-sm font-medium text-gray-700 '
-					>
-						<img
-							src={idendityIcon}
-							width={'48px'}
-							height={'48px'}
-							alt='name'
-						/>
+					<label htmlFor='name' className='block mr-3 text-sm font-medium text-gray-700 '>
+						<img src={idendityIcon} width={'48px'} height={'48px'} alt='name' />
 					</label>
 					<div className='relative mt-1 rounded-lg shadow-sm'>
 						<input
@@ -106,16 +96,8 @@ function Calculator() {
 					</div>
 				</div>
 				<div className='flex items-center justify-center'>
-					<label
-						htmlFor='weight'
-						className='block mr-3 text-sm font-medium'
-					>
-						<img
-							src={weightIcon}
-							width={'48px'}
-							height={'48px'}
-							alt='weight'
-						/>
+					<label htmlFor='weight' className='block mr-3 text-sm font-medium'>
+						<img src={weightIcon} width={'48px'} height={'48px'} alt='weight' />
 					</label>
 					<div className='relative mt-1 rounded-lg shadow-sm'>
 						<input
@@ -130,16 +112,8 @@ function Calculator() {
 					</div>
 				</div>
 				<div className='flex items-center justify-center'>
-					<label
-						htmlFor='height'
-						className='block mr-3 text-sm font-medium text-gray-700'
-					>
-						<img
-							src={heightIcon}
-							width={'48px'}
-							height={'48px'}
-							alt='height'
-						/>
+					<label htmlFor='height' className='block mr-3 text-sm font-medium text-gray-700'>
+						<img src={heightIcon} width={'48px'} height={'48px'} alt='height' />
 					</label>
 					<div className='relative mt-1 rounded-lg shadow-sm'>
 						<input

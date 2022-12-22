@@ -38,11 +38,7 @@ function NavbarContainer() {
 						></path>
 					</svg>
 				</button>
-				<div
-					className={`${
-						isOpen ? 'show' : 'hidden'
-					} w-full md:block md:w-auto items-center`}
-				>
+				<div className={`${isOpen ? 'show' : 'hidden'} w-full md:block md:w-auto items-center`}>
 					<ul className='flex flex-col p-4 mt-4 border rounded-lg border-burnt-sienna-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0'>
 						<li>
 							<Link

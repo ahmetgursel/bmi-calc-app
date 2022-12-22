@@ -14,13 +14,7 @@ function DietList() {
 				<div className='flex-col justify-center rounded-lg'>
 					<h2 className='flex justify-center'>
 						Kahvaltı
-						<img
-							className='ml-3'
-							src={breakfastIcon}
-							width={'36px'}
-							height={'36px'}
-							alt='breakfast-icon'
-						/>
+						<img className='ml-3' src={breakfastIcon} width={'36px'} height={'36px'} alt='breakfast-icon' />
 					</h2>
 					<p className='flex mt-5 text-lg font-normal text-burnt-sienna-900'>
 						✓ 2 yumurta beyazı ya da 113 gram yumurta
@@ -36,13 +30,7 @@ function DietList() {
 				<div className='flex-col justify-center mt-10 rounded-lg'>
 					<h2 className='flex justify-center'>
 						Öğle Yemeği
-						<img
-							className='ml-3'
-							src={lunchIcon}
-							width={'36px'}
-							height={'36px'}
-							alt='breakfast-icon'
-						/>
+						<img className='ml-3' src={lunchIcon} width={'36px'} height={'36px'} alt='breakfast-icon' />
 					</h2>
 					<p className='flex mt-5 text-lg font-normal text-burnt-sienna-900'>
 						✓ 113 gram fasulye / bezelye / balkabağı
@@ -55,13 +43,7 @@ function DietList() {
 				<div className='flex-col justify-center mt-10 rounded-lg'>
 					<h2 className='flex justify-center'>
 						Ara Öğün
-						<img
-							className='ml-3'
-							src={snackIcon}
-							width={'36px'}
-							height={'36px'}
-							alt='breakfast-icon'
-						/>
+						<img className='ml-3' src={snackIcon} width={'36px'} height={'36px'} alt='breakfast-icon' />
 					</h2>
 					<p className='flex mt-5 text-lg font-normal text-burnt-sienna-900'>
 						✓ Hindi ya da jambon ruloları
@@ -73,13 +55,7 @@ function DietList() {
 				<div className='flex-col justify-center mt-10 mb-10 rounded-lg'>
 					<h2 className='flex justify-center'>
 						Akşam Yemeği
-						<img
-							className='ml-3'
-							src={dinnerIcon}
-							width={'36px'}
-							height={'36px'}
-							alt='breakfast-icon'
-						/>
+						<img className='ml-3' src={dinnerIcon} width={'36px'} height={'36px'} alt='breakfast-icon' />
 					</h2>
 					<p className='flex mt-5 text-lg font-normal text-burnt-sienna-900'>
 						✓ 113 gram fasulye / bezelye / balkabağı
