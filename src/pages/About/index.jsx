@@ -8,29 +8,28 @@ function About() {
 			</div>
 			<div className='p-5 text-lg font-normal text-justif text-burnt-sienna-900'>
 				<p>
-					Vücut kitle indeksi (VKİ) ya da boy kilo indeksi; bir kişinin vücudundaki tahmini yağ oranını
-					gösteren bir hesaplama yöntemidir. Bu yöntemde kişinin boy kilo oranı esas alınır. İndeksin verdiği
-					sonuca göre kişinin mevcut kilosunun, ideal kilosuna yakınlığı ve uzaklığı hesaplanabilir.
+					Vücut kitle indeksi (VKİ) ya da boy kilo indeksi; bir kişinin vücudundaki tahmini yağ oranını gösteren bir
+					hesaplama yöntemidir. Bu yöntemde kişinin boy kilo oranı esas alınır. İndeksin verdiği sonuca göre kişinin
+					mevcut kilosunun, ideal kilosuna yakınlığı ve uzaklığı hesaplanabilir.
 					<br />
 					<br />
-					<span className='font-bold'>0-18.5:</span> Zayıf kabul edilen vücut kitle indeksi aralığı olarak
-					bilinir. Kişinin diyetisyen eşliğinde sağlıklı bir şekilde kilo alması şarttır.
+					<span className='font-bold'>0-18.5:</span> Zayıf kabul edilen vücut kitle indeksi aralığı olarak bilinir.
+					Kişinin diyetisyen eşliğinde sağlıklı bir şekilde kilo alması şarttır.
 					<br />
 					<br />
-					<span className='font-bold'>18.5-24.9:</span> Kişinin ideal kilosunda olduğu gösteren vücut kitle
-					indeksi aralığıdır.
+					<span className='font-bold'>18.5-24.9:</span> Kişinin ideal kilosunda olduğu gösteren vücut kitle indeksi
+					aralığıdır.
 					<br />
 					<br />
-					<span className='font-bold'>25-29.9:</span> Kişinin fazla kilolu olduğunu ifade eder. Diyetisyen
-					eşliğinde sağlıklı bir şekilde kilo verilmesi tavsiye edilir.
+					<span className='font-bold'>25-29.9:</span> Kişinin fazla kilolu olduğunu ifade eder. Diyetisyen eşliğinde
+					sağlıklı bir şekilde kilo verilmesi tavsiye edilir.
 					<br />
 					<br />
-					<span className='font-bold'>30-34.9:</span> Kişinin birinci derece obez kategorisinde yer aldığını
-					gösterir.
+					<span className='font-bold'>30-34.9:</span> Kişinin birinci derece obez kategorisinde yer aldığını gösterir.
 					<br />
 					<br />
-					<span className='font-bold'>35+:</span> İkinci derece obez kategorisinde yer alan bu kişi; kalp ve
-					damar hastalıklarına karşı savunmasızdır.
+					<span className='font-bold'>35+:</span> İkinci derece obez kategorisinde yer alan bu kişi; kalp ve damar
+					hastalıklarına karşı savunmasızdır.
 				</p>
 			</div>
 		</div>

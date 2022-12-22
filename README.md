@@ -4,10 +4,10 @@ Patika.dev Frontend Web Development Projeleri "VÃ¼cut Kitle Endeksi Hesaplama" Ã
 
 https://bmi-calc-app-demo.netlify.app/
 
--   `React.js` ve `Javascript`
--   Stillendirmede `Tailwind CSS`
--   react-router-dom
--   localStorage
+- `React.js` ve `Javascript`
+- Stillendirmede `Tailwind CSS`
+- react-router-dom
+- localStorage
 
 <img src="images/homepage.png" width="800">
 <img src="images/bmimodal.png" width="800">
